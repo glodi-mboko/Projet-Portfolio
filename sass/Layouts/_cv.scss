@@ -1,0 +1,127 @@
+.container__cv {
+  //border: 1px black solid;
+  background-color: #00061b;
+  display: flex;
+  width: 30vw;
+  height: 117vh;
+  flex-direction: column;
+  margin-right: 2%;
+  position: sticky;
+  top: 10px;
+  &__profil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #111f30;
+    padding: 3%;
+    height: 30vh;
+    > img {
+      border-radius: 100%;
+      width: 80px;
+      height: 80px;
+      margin-bottom: 2%;
+      + span {
+        font-family: Quicksand, sans-serif;
+        font-weight: 600;
+        color: #04ffff;
+        + span {
+          color: #5c7c99;
+        }
+      }
+    }
+  }
+  &__country {
+    padding: 5% 5%;
+    height: 15%;
+    border-bottom: 1px #5c7a9948 solid;
+    > div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      line-height: 40px;
+    }
+  }
+  &__language {
+    border-bottom: 1px #5c7a9948 solid;
+    height: 25%;
+    padding: 5% 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__level {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      //border:5px #ffffff solid;
+      width: 30%;
+      height: 100%;
+      /* >div{
+                background-color: transparent;
+                width: 80px;
+                height: 80px;
+                border:3px #04FFFF solid;
+                border-radius: 100%;
+                text-align: center;
+                >span{
+                    position: relative;
+                    top: 40%;
+                }
+            } */
+      &__first {
+        background-color: transparent;
+        width: 80px;
+        height: 80px;
+        border: 3px solid;
+        border-color: #04ffff;
+        border-radius: 100%;
+        text-align: center;
+        > span {
+          position: relative;
+          top: 40%;
+        }
+      }
+    }
+  }
+  &__hard-skills {
+    border-bottom: 1px #5c7a9948 solid;
+    height: 35%;
+    padding: 5% 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__skill {
+      width: 100%;
+
+      &__designation {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        line-height: 30px;
+      }
+      &__level-bare {
+        height: 1.5vh;
+        width: 100%;
+        background-color: #04ffff;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  &__download-cv {
+    //border-top: 1px #5C7C99 solid;
+    background-color: #111f30;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 6vh;
+    > img {
+      margin-right: 10px;
+      height: 40%;
+    }
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+}

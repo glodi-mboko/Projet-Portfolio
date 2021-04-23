@@ -1,0 +1,39 @@
+{
+    "Identites":[{
+            "nom":"MBOKO",
+            "prenom":"Glodi",
+            "qualification":"développeur full stack",
+            "residence":"RDC",
+            "ville":"Kinshasa",
+            "apropos":"Salut, je suis Glodi MBOKO. je suis d’origine congolaise, j’ai fait mes études de base à Kinshasa, ensuite j’ai poursuivi mes études universitaire à l’Université de Kinshasa (UNIKIN) dans le département de mathématique et informatique. L’informatique a été toujours mon domaine de prédilection. Aujourd’hui très passionner par le numérique, je me donne toujours avec beaucoup de sérieux et abnégation dans mon travail de développeur. La ponctualité, la discipline, le respect, … ont toujours été pour moi le savoir être dans mon environnement. J’offre des services de qualité et les clients ont toujours été satisfait de ça."
+        }],
+    
+    "softskills":[{
+        "first": "Esprit d'équipe",
+        "second":"Ponctualité",
+        "third": "Respect",
+        "ford":"Discipline",
+        "five":"Travail sous pression",
+        "six":"Bonne communication",
+        "seven":"Amour du travail"
+
+    }], 
+        
+    "languages":[{
+            "first":"French",
+            "second":"English",
+            "three":"Portuguais"
+        }],
+    "levelLanguages":[{
+            "french":"90%",
+            "english":"35%",
+            "portuguais":"20%"
+    }],
+    "technologies":[{
+            "html":"80%",
+            "css":"65%",
+            "sass":"80%",
+            "javascript":"65%"
+    }]
+}
+

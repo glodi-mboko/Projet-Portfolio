@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container__cv">
+            <div class="container__cv__profil">
+                <img src="./public/img/profil.jpg" alt="MBOKO GLODI">
+                <span id="myNames"></span>
+                <span id="myQualification"></span>
+            </div>
+            <div class="container__cv__country">
+                <div>
+                    <span>Résidence :</span>
+                    <span id="myCountry"></span>
+                </div>
+                <div>
+                    <span>Ville :</span>
+                    <span id="myCity"></span>
+                </div>
+            </div>
+            <div class="container__cv__language">
+                <div class="container__cv__language__level">
+                    <div class="container__cv__language__level__first">
+                       <span id="frenchLevel"></span>
+                    </div>
+                    <p>French</p>
+                </div>
+                <div class="container__cv__language__level">
+                    <div class="container__cv__language__second">
+                        <span id="englishLevel"></span>
+                    </div>
+                    <p>English</p>
+                </div>
+                <div class="container__cv__language__level">
+                    <div class="container__cv__language__third">
+                        <span id="portuguaisLevel"></span>
+                    </div>
+                    <p>Portuguais</p>
+                </div>
+            </div>
+            <div class="container__cv__hard-skills">
+                <div class="container__cv__hard-skills__skill">
+                    <div class="container__cv__hard-skills__skill__designation">
+                        <span>HTML</span>
+                        <span id="htmlLevel"></span>
+                    </div>
+                    <div class="container__cv__hard-skills__skill__level-bare">
+                    </div>
+                </div>
+                <div class="container__cv__hard-skills__skill">
+                    <div class="container__cv__hard-skills__skill__designation">
+                        <span>CSS</span>
+                        <span id="cssLevel"></span>
+                    </div>
+                    <div class="container__cv__hard-skills__skill__level-bare">
+                    </div>
+                </div>
+                <div class="container__cv__hard-skills__skill">
+                    <div class="container__cv__hard-skills__skill__designation">
+                        <span>JavaScript</span>
+                        <span id="javascriptLevel"></span>
+                    </div>
+                    <div class="container__cv__hard-skills__skill__level-bare">
+                    </div>
+                </div>
+                <div class="container__cv__hard-skills__skill">
+                    <div class="container__cv__hard-skills__skill__designation">
+                        <span>Sass</span>
+                        <span id="sassLevel"></span>
+                    </div>
+                    <div class="container__cv__hard-skills__skill__level-bare">
+                    </div>
+                </div>
+            </div>
+            <div class="container__cv__download-cv">
+                <img src="public/img/download+guardar+import+save+icon-1320086208900265667.png" alt="">
+                <span><a href="">Télécharger le cv</a></span>
+            </div>
+        </div>
+        <div class="container__description">
+            <nav class="container__description__nav">
+                <ul>
+                    <li><a href="#aboutMe">À propos</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>   
+                </ul>
+            </nav>
+            <div class="container__description__about-me">
+                <div class="container__description__about-me__image">
+                    <img src="/public/img/image-glodi.png" alt="image glodi">
+                    <h1 class="container__description__about-me__image__title">&lt; À la recherche d'un développeur <span>compétent</span> /&gt; ?</h1>
+                </div>
+                <div class="container__description__about-me__texte" id="aboutMe">
+                    <h2>A propos de moi</h2>
+                    <p id="apropos"></p>
+                </div>
+                <div class="container__description__about-me__skills" id="skills">
+                    <h2>Mes Compétences</h2>
+                    <div class="container__description__about-me__skills__box">
+                        <div class="container__description__about-me__skills__box__hard">
+                            <div>
+                                <img src="./public/img/node-js-brands.svg" alt="JavaScript">
+                           </div>
+                            <div>
+                               <img src="./public/img/css3-brands.svg" alt="css 3">
+                            </div>
+                            <div>
+                               <img src="./public/img/html5-brands.svg" alt="html 5">
+                            </div>
+                            <div>
+                               <img src="./public/img/sass-brands.svg" alt="sass">
+                            </div>
+                        </div>
+                        <div class="container__description__about-me__skills__box__soft">
+                                <div>
+                                    <p class = "container__description__about-me__skills__box__soft__line" id="softFirst"></p>
+                                    <p id="softSecond"></p>
+                                    <p class = "container__description__about-me__skills__box__soft__line"  id="softThird"></p>
+                                    <p id="softFord"></p>
+                                    <p class = "container__description__about-me__skills__box__soft__line"  id="softFive"></p>
+                                    <p id="softSix"></p>
+                                    <p class = "container__description__about-me__skills__box__soft__line"  id="softSeven"></p>
+                                </div>
+                        </div>
+                    </div>
+                                        
+                </div>
+            </div>
+            <div class="container__description__project">
+                <h2>Réalisations</h2>
+                <div class="container__description__project__box">
+                    <div class="container__description__project__box__realisation">
+                        <h3>Formulaire/css</h3>
+                        <img src="./public/img/projet-formulaire.png" alt="projet-formulaire-contact" class="container__description__project__box__realisation__image">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="container__description__project__box__realisation">
+                        <h3>Site KDA</h3>
+                        <img src="./public/img/Projet-site-kd" alt="projet-formulaire-contact" class="container__description__project__box__realisation__image">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="container__description__project__box__realisation">
+                        <h3>Formulaire/js</h3>
+                        <img src="./public/img/projet-formulaire-contact.png" alt="projet-formulaire-contact" class="container__description__project__box__realisation__image">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="container__description__project__box__realisation">
+                        <h3>Formulaire/css</h3>
+                        <img src="./public/img/Screenshot_2021-04-11 Page 1.png" alt="projet-formulaire-contact" class="container__description__project__box__realisation__image">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="container__description__project__box__realisation">
+                        <h3>Site KDA</h3>
+                        <img src="./public/img/Screenshot_2021-04-11 Structure un document HTML à partir d'une maquette.png" alt="projet-formulaire-contact" class="container__description__project__box__realisation__image">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="container__description__project__box__realisation">
+                        <h3>Formulaire/js</h3>
+                        <img src="./public/img/Screenshot_2021-04-11 Page 2.png" alt="projet-formulaire-contact" class="container__description__project__box__realisation__image">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div> 
+                </div>
+            </div>
+            <footer class="container__description__footer" id="contact">
+               <h2>Contact me</h2>
+               <form action="">
+                   <div>
+                       <input type="text">
+                       <input type="text">
+                       <input type="text">
+                       <input type="text">
+                   </div>
+                   <input type="text" name="" id="">
+                   <textarea name="" id="" cols="30" rows="10">
+                   </textarea>
+                   <input type="submit">
+               </form>
+            </footer>
+        </div>
+        
+    </div>
+    <script src="testajax.js"></script>
+</body>
+</html>

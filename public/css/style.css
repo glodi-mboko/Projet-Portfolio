@@ -1,0 +1,479 @@
+@charset "UTF-8";
+@font-face {
+  font-family: Quicksand;
+  src: url("Quicksand/Quicksand-VariableFont_wght.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Raleway italic";
+  src: url("Raleway/Raleway-Italic-VariableFont_wght.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("Raleway/Raleway-VariableFont_wght.ttf") format("ttf");
+}
+.container__cv {
+  background-color: #00061b;
+  display: flex;
+  width: 30vw;
+  height: 117vh;
+  flex-direction: column;
+  margin-right: 2%;
+  position: sticky;
+  top: 10px;
+}
+.container__cv__profil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #111f30;
+  padding: 3%;
+  height: 30vh;
+}
+.container__cv__profil > img {
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 2%;
+}
+.container__cv__profil > img + span {
+  font-family: Quicksand, sans-serif;
+  font-weight: 600;
+  color: #04ffff;
+}
+.container__cv__profil > img + span + span {
+  color: #5c7c99;
+}
+.container__cv__country {
+  padding: 5% 5%;
+  height: 15%;
+  border-bottom: 1px #5c7a9948 solid;
+}
+.container__cv__country > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  line-height: 40px;
+}
+.container__cv__language {
+  border-bottom: 1px #5c7a9948 solid;
+  height: 25%;
+  padding: 5% 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.container__cv__language__level {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  height: 100%;
+  /* >div{
+            background-color: transparent;
+            width: 80px;
+            height: 80px;
+            border:3px #04FFFF solid;
+            border-radius: 100%;
+            text-align: center;
+            >span{
+                position: relative;
+                top: 40%;
+            }
+        } */
+}
+.container__cv__language__level__first {
+  background-color: transparent;
+  width: 80px;
+  height: 80px;
+  border: 3px solid;
+  border-color: #04ffff;
+  border-radius: 100%;
+  text-align: center;
+}
+.container__cv__language__level__first > span {
+  position: relative;
+  top: 40%;
+}
+.container__cv__hard-skills {
+  border-bottom: 1px #5c7a9948 solid;
+  height: 35%;
+  padding: 5% 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container__cv__hard-skills__skill {
+  width: 100%;
+}
+.container__cv__hard-skills__skill__designation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  line-height: 30px;
+}
+.container__cv__hard-skills__skill__level-bare {
+  height: 1.5vh;
+  width: 100%;
+  background-color: #04ffff;
+  margin-bottom: 10px;
+}
+.container__cv__download-cv {
+  background-color: #111f30;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 6vh;
+}
+.container__cv__download-cv > img {
+  margin-right: 10px;
+  height: 40%;
+}
+.container__cv__download-cv a {
+  color: white;
+  text-decoration: none;
+}
+
+.container__description {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  background-color: transparent;
+  z-index: 1;
+}
+.container__description__nav {
+  display: flex;
+  justify-content: right;
+  width: 100%;
+  background-color: #010e1d;
+}
+.container__description__nav ul {
+  display: flex;
+  list-style-type: none;
+}
+.container__description__nav ul a {
+  margin-right: 30px;
+  margin-left: 30px;
+  text-decoration: none;
+  color: white;
+}
+.container__description__about-me {
+  display: flex;
+  flex-direction: column;
+  background-color: #00061b;
+  width: 100%;
+  height: 170vh;
+}
+.container__description__about-me__image {
+  position: relative;
+  background: content-box url("../../public/img/Capture d’écran du 2021-04-02 12-04-54.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 27%;
+}
+.container__description__about-me__image img {
+  height: 100%;
+  width: 95%;
+  float: right;
+}
+.container__description__about-me__image__title {
+  position: absolute;
+  width: 55%;
+  text-align: center;
+  top: 15%;
+  left: 5%;
+  font-family: Quicksand, sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  color: white;
+}
+.container__description__about-me__image__title span {
+  color: #04ffff;
+}
+.container__description__about-me__texte {
+  width: 100%;
+  height: 33%;
+  padding-left: 20px;
+}
+.container__description__about-me__texte p {
+  color: #a0bfe5;
+  width: 95%;
+  text-align: justify;
+  line-height: 30px;
+}
+.container__description__about-me__skills {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 40%;
+  padding-left: 20px;
+}
+.container__description__about-me__skills__box {
+  display: flex;
+  flex-direction: row;
+  height: 80%;
+  margin-top: 10px;
+}
+.container__description__about-me__skills__box__hard {
+  width: 60%;
+  height: 100%;
+  padding: 35px 0px;
+  text-align: center;
+}
+.container__description__about-me__skills__box__hard > div {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px #04ffff solid;
+  border-radius: 25px;
+  margin: 5px;
+  width: 40%;
+  height: 46%;
+  background-color: transparent;
+  transform: scale(1);
+  transition: transform 400ms;
+}
+.container__description__about-me__skills__box__hard > div:hover {
+  transform: scale(1.1);
+}
+.container__description__about-me__skills__box__hard > div img {
+  height: 50%;
+  width: 50%;
+}
+.container__description__about-me__skills__box__soft {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35%;
+  height: 100%;
+}
+.container__description__about-me__skills__box__soft__line {
+  background-color: #111f30;
+}
+.container__description__about-me__skills__box__soft > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  border: 1px #04ffff solid;
+  border-radius: 25px;
+}
+.container__description__about-me__skills__box__soft > div > p {
+  color: #04ffff;
+  width: 100%;
+  height: 12%;
+  padding-top: 4%;
+  padding-left: 4%;
+  margin: 0px;
+}
+
+.container__description__project {
+  padding-top: 70px;
+  display: flex;
+  flex-direction: column;
+  background-color: #00061b;
+  border-bottom: 1px #5c7a9948 solid;
+  height: 130vh;
+}
+.container__description__project h2 {
+  margin-left: 20px;
+}
+.container__description__project__box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+}
+.container__description__project__box__realisation {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 40vh;
+  width: 17vw;
+  margin: 15px;
+  padding-top: 30px;
+  border: 1px #041f60 solid;
+  transform: scale(1);
+  transition: transform 400ms;
+  background-color: #041f60;
+}
+.container__description__project__box__realisation h3 {
+  padding: 10px;
+  background-color: #2ceef0;
+  width: 100%;
+  height: 15%;
+  text-align: center;
+  color: #0476d0;
+  position: absolute;
+  top: 48.5%;
+  opacity: 100%;
+  z-index: 2;
+}
+.container__description__project__box__realisation__image {
+  width: 100%;
+  height: 50%;
+  z-index: 1;
+}
+.container__description__project__box__realisation > p {
+  position: relative;
+  top: 30px;
+  text-align: center;
+  color: #5c7c99;
+}
+.container__description__project__box__realisation:hover {
+  transform: scale(1.1);
+}
+.container__description__project__box__realisation:hover h3 {
+  color: white;
+}
+
+.container__description__footer {
+  height: 49vh;
+  background-color: #00061b;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: Raleway, sans-serif;
+  color: white;
+  font-weight: normal;
+  background-color: #020b14;
+  padding: 20px 0px;
+}
+@media screen and (max-width: 450px) {
+  .container__description__nav {
+    border: 1px red solid;
+    justify-content: center;
+    align-items: center;
+  }
+  .container__description__nav ul {
+    display: flex;
+    border: 1px red solid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+  }
+  .container__description__nav ul li {
+    background: black;
+    line-height: 40px;
+  }
+  .container__description__about-me {
+    height: 250vh;
+  }
+  .container__description__about-me__image {
+    height: 12%;
+  }
+  .container__description__about-me__image__title {
+    font-size: 25px;
+  }
+  .container__description__about-me__texte {
+    height: 35%;
+  }
+  .container__description__about-me__skills {
+    height: 50%;
+  }
+  .container__description__about-me__skills__box {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80%;
+    margin: 0;
+  }
+  .container__description__about-me__skills__box__hard {
+    padding: 18px 0px;
+    width: 80%;
+  }
+  .container__description__about-me__skills__box__soft {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .container {
+    padding: 0px;
+  }
+  .container__cv {
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 153vh;
+    margin-right: 0;
+  }
+  .container__description {
+    width: 95%;
+  }
+  .container__description__about-me__image {
+    background-position: bottom;
+  }
+  .container__description__about-me__image__title {
+    font-size: 35px;
+  }
+  .container__description__about-me__skills__box {
+    margin-left: 10%;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .container__description {
+    width: 100%;
+  }
+  .container__description__about-me__skills__box {
+    width: 100%;
+    margin: 0;
+  }
+  .container__description__about-me__skills__box__hard {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .container__description__about-me {
+    height: 180vh;
+  }
+  .container__description__about-me__image {
+    height: 20%;
+  }
+  .container__description__about-me__image__title {
+    font-size: 30px;
+  }
+  .container__description__about-me__texte {
+    height: 45%;
+  }
+  .container__description__about-me__skills {
+    height: 36%;
+  }
+  .container__description__about-me__skills__box {
+    width: 100%;
+    height: 80%;
+    margin: 0;
+  }
+  .container__description__about-me__skills__box__hard {
+    padding: 18px 0px;
+    width: 50%;
+  }
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*# sourceMappingURL=style.css.map */
