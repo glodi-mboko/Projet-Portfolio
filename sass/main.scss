@@ -1,197 +1,152 @@
-@import"./Base/polices/polices";
-@import"./Layouts/cv";
-@import"./Layouts/description";
-@import"./Layouts/project";
-@import"./Layouts/footer";
-*{
-    box-sizing: border-box;
+@import "./Base/polices/polices";
+@import "./Layouts/cv";
+@import "./Layouts/description";
+@import "./Layouts/project";
+@import "./Layouts/footer";
+* {
+  box-sizing: border-box;
 }
-.container
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    font-family: Raleway, sans-serif;
-    color: white;
-    font-weight: normal;
-    background-color: #020b14;
-    padding: 20px 0px;
-    @media screen and (max-width: 450px)
-    {
-        
-        &__description
-        {
-            &__nav
-            {
-                border:1px red solid;
-                justify-content: center;
-                align-items: center;
-                ul{
-                    display: flex;
-                    border: 1px red solid;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    width: 40%;
-                    li{
-                        background: black;
-                        line-height: 40px;
-                    }
-                }
-            }
-            &__about-me
-            {
-                height: 250vh;
-                &__image
-                {
-                    height: 12%;
-                    &__title
-                    {
-                        font-size: 25px;
-                    }
-                }
-                &__texte
-                {
-                    height: 35%;
-                }
-                &__skills
-                {
-                    height: 50%;
-                    &__box
-                    {
-                        flex-direction: column-reverse;
-                        align-items: center;
-                        justify-content: center;
-                        width: 100%;
-                        height: 80%;
-                        margin: 0;
-                        &__hard
-                        {
-                            padding: 18px 0px;
-                            width: 80%;
-                        }
-                        &__soft
-                        {
-                            width: 70%;
-                        }
-                    }
-                    
-                }
-            }
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: Raleway, sans-serif;
+  color: white;
+  font-weight: normal;
+  background-color: #00061b;
+  padding: 20px 0px;
+  @media screen and (max-width: 450px) {
+    &__description {
+      &__nav {
+        border: 1px red solid;
+        justify-content: center;
+        align-items: center;
+        ul {
+          display: flex;
+          border: 1px red solid;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 40%;
+          li {
+            background: black;
+            line-height: 40px;
+          }
         }
-    }
-
-
-    @media screen and (max-width : 1100px)
-    {
-        padding: 0px;
-        //display: flex;
-        //flex-direction:column-reverse;
-        //align-items: center;
-        //justify-content: center;
-        &__cv
-        {
-            display: none;
-            position:relative;
+      }
+      &__about-me {
+        height: 250vh;
+        &__image {
+          height: 12%;
+          &__title {
+            font-size: 25px;
+          }
+        }
+        &__texte {
+          height: 35%;
+        }
+        &__skills {
+          height: 50%;
+          &__box {
+            flex-direction: column-reverse;
+            align-items: center;
+            justify-content: center;
             width: 100%;
-            height: 153vh;
-            margin-right: 0;
-        }
-        &__description
-        {
-            width: 95%;
-            &__about-me
-            {
-                &__image
-                {
-                    background-position:bottom ;
-                    &__title
-                    {
-                        font-size: 35px;
-                    }
-                }
-                &__skills
-                {
-                    &__box
-                    {
-                        margin-left: 10%;
-                        width: 80%;
-                    }
-                }
+            height: 80%;
+            margin: 0;
+            &__hard {
+              padding: 18px 0px;
+              width: 80%;
             }
-            
-        }
-    }
-    @media screen and (max-width : 800px)
-    {
-        &__description
-        {
-            width: 100%;
-            &__about-me
-            {
-                &__skills
-                {
-                    &__box
-                    {
-                        width: 100%;
-                        margin: 0;
-                        &__hard
-                        {
-                            width: 50%;
-                        }
-                    }
-                    
-                }
+            &__soft {
+              width: 70%;
             }
+          }
         }
+      }
     }
-    @media screen and (max-width : 650px)
-    {
-        &__description
-        {
-            
-            &__about-me
-            {
-                height: 180vh;
-                &__image
-                {
-                    height: 20%;
-                    &__title
-                    {
-                        font-size: 30px;
-                    }
-                }
-                &__texte
-                {
-                    height: 45%;
-                }
-                &__skills
-                {
-                    height: 36%;
-                    &__box
-                    {
-                        width: 100%;
-                        height: 80%;
-                        margin: 0;
-                        &__hard
-                        {
-                            padding: 18px 0px;
-                            width: 50%;
-                        }
-                    }
-                    
-                }
-            }
-        }
-    }
-    
-   
-    
-}
-body{
+  }
+
+  @media screen and (max-width: 1100px) {
     padding: 0px;
-    margin: 0px;
+    //display: flex;
+    //flex-direction:column-reverse;
+    //align-items: center;
+    //justify-content: center;
+    &__cv {
+      display: none;
+      position: relative;
+      width: 100%;
+      height: 153vh;
+      margin-right: 0;
+    }
+    &__description {
+      width: 95%;
+      &__about-me {
+        &__image {
+          background-position: bottom;
+          &__title {
+            font-size: 35px;
+          }
+        }
+        &__skills {
+          &__box {
+            margin-left: 10%;
+            width: 80%;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 800px) {
+    &__description {
+      width: 100%;
+      &__about-me {
+        &__skills {
+          &__box {
+            width: 100%;
+            margin: 0;
+            &__hard {
+              width: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 650px) {
+    &__description {
+      &__about-me {
+        height: 180vh;
+        &__image {
+          height: 20%;
+          &__title {
+            font-size: 30px;
+          }
+        }
+        &__texte {
+          height: 45%;
+        }
+        &__skills {
+          height: 36%;
+          &__box {
+            width: 100%;
+            height: 80%;
+            margin: 0;
+            &__hard {
+              padding: 18px 0px;
+              width: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
 }
-html{
-    scroll-behavior: smooth;
+body {
+  padding: 0px;
+  margin: 0px;
+}
+html {
+  scroll-behavior: smooth;
 }

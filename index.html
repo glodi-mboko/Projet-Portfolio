@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="stylesheet" href="./sass/mystyle.css">
     <title>Portfolio</title>
 </head>
 <body>
@@ -26,24 +27,53 @@
                 </div>
             </div>
             <div class="container__cv__language">
-                <div class="container__cv__language__level">
-                    <div class="container__cv__language__level__first">
-                       <span id="frenchLevel"></span>
+                <li class="note-display" data-note="85">
+                    <div class="circle">
+                      <svg width="84" height="84" class="circle__svg">
+                        <circle cx="41" cy="41" r="38" class="circle__progress circle__progress--path"></circle>
+                        <circle cx="41" cy="41" r="38" class="circle__progress circle__progress--fill"></circle>
+                      </svg>
+                
+                      <div class="percent">
+                        <span class="percent__int">0</span>
+                        <span class="percent__dec"></span>
+                      </div>
                     </div>
-                    <p>French</p>
-                </div>
-                <div class="container__cv__language__level">
-                    <div class="container__cv__language__second">
-                        <span id="englishLevel"></span>
+                
+                    <span class="label">French</span>
+                  </li>
+                
+                  <li class="note-display" data-note="35">
+                    <div class="circle">
+                      <svg width="84" height="84" class="circle__svg">
+                        <circle cx="41" cy="41" r="38" class="circle__progress circle__progress--path"></circle>
+                        <circle cx="41" cy="41" r="38" class="circle__progress circle__progress--fill"></circle>
+                      </svg>
+                
+                      <div class="percent">
+                        <span class="percent__int">0</span>
+                        <span class="percent__dec"></span>
+                      </div>
                     </div>
-                    <p>English</p>
-                </div>
-                <div class="container__cv__language__level">
-                    <div class="container__cv__language__third">
-                        <span id="portuguaisLevel"></span>
-                    </div>
-                    <p>Portuguais</p>
-                </div>
+                
+                    <span class="label">English</span>
+                  </li>
+                
+                  <li class="note-display" data-note="20">
+                    <div class="circle">
+                      <svg width="84" height="84" class="circle__svg">
+                        <circle cx="41" cy="41" r="38" class="circle__progress circle__progress--path"></circle>
+                        <circle cx="41" cy="41" r="38" class="circle__progress circle__progress--fill"></circle>
+                      </svg>
+                
+                      <div class="percent">
+                        <span class="percent__int">0</span>
+                        <span class="percent__dec"></span>
+                      </div>
+                    </div>  
+                    <span class="label">Portuguais</span>
+                  </li>
+                </ul>
             </div>
             <div class="container__cv__hard-skills">
                 <div class="container__cv__hard-skills__skill">
@@ -98,11 +128,13 @@
                     <h1 class="container__description__about-me__image__title">&lt; À la recherche d'un développeur <span>compétent</span> /&gt; ?</h1>
                 </div>
                 <div class="container__description__about-me__texte" id="aboutMe">
+                    <div class="bcg-img"></div>
+                    <di class="bcg-color"></di>
                     <h2>A propos de moi</h2>
                     <p id="apropos"></p>
                 </div>
                 <div class="container__description__about-me__skills" id="skills">
-                    <h2>Mes Compétences</h2>
+                    <h2>Hard and Soft Skills</h2>
                     <div class="container__description__about-me__skills__box">
                         <div class="container__description__about-me__skills__box__hard">
                             <div>
@@ -187,5 +219,6 @@
         
     </div>
     <script src="testajax.js"></script>
+    <script src="./sass/script.js"></script>
 </body>
 </html>

@@ -1,11 +1,11 @@
 .container__cv {
-  //border: 1px black solid;
+  box-shadow: 4px 0px 4px 2px #00000062;
   background-color: #00061b;
   display: flex;
-  width: 30vw;
+  width: 25vw;
   height: 117vh;
   flex-direction: column;
-  margin-right: 2%;
+  margin-right: 1%;
   position: sticky;
   top: 10px;
   &__profil {
@@ -48,41 +48,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
-    &__level {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      //border:5px #ffffff solid;
-      width: 30%;
-      height: 100%;
-      /* >div{
-                background-color: transparent;
-                width: 80px;
-                height: 80px;
-                border:3px #04FFFF solid;
-                border-radius: 100%;
-                text-align: center;
-                >span{
-                    position: relative;
-                    top: 40%;
-                }
-            } */
-      &__first {
-        background-color: transparent;
-        width: 80px;
-        height: 80px;
-        border: 3px solid;
-        //border-color: #04ffff;
-        border-image: linear-gradient(#f6b73c, #4d9f0c) 10;
-        border-radius: 100%;
-        text-align: center;
-        > span {
-          position: relative;
-          top: 40%;
-        }
-      }
-    }
   }
   &__hard-skills {
     border-bottom: 1px #5c7a9948 solid;
@@ -100,10 +65,28 @@
         justify-content: space-between;
         line-height: 30px;
       }
-      &__level-bare {
+      &:nth-child(1) &__level-bare {
         height: 1.5vh;
         width: 100%;
-        background: linear-gradient(to right, #04ffff 80%, #333 -20%);
+        background: linear-gradient(to right, #04ffff 80%, #04ffff36 -20%);
+        margin-bottom: 10px;
+      }
+      &:nth-child(2) &__level-bare {
+        height: 1.5vh;
+        width: 100%;
+        background: linear-gradient(to right, #04ffff 65%, #04ffff36 -35%);
+        margin-bottom: 10px;
+      }
+      &:nth-child(3) &__level-bare {
+        height: 1.5vh;
+        width: 100%;
+        background: linear-gradient(to right, #04ffff 65%, #04ffff36 -35%);
+        margin-bottom: 10px;
+      }
+      &:nth-child(4) &__level-bare {
+        height: 1.5vh;
+        width: 100%;
+        background: linear-gradient(to right, #04ffff 80%, #04ffff36 -20%);
         margin-bottom: 10px;
       }
     }
